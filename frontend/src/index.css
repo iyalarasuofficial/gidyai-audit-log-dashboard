@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply text-gray-700 bg-gray-50;
+  }
+
+  h1 {
+    @apply text-3xl font-semibold text-gray-900;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold text-gray-900;
+  }
+
+  code {
+    @apply font-mono text-sm bg-gray-100 px-2 py-1 rounded;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors font-medium text-sm;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-100 text-gray-700 border border-gray-300 rounded hover:bg-gray-200 transition-colors font-medium text-sm;
+  }
+
+  .badge-critical {
+    @apply inline-block px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-semibold;
+  }
+
+  .badge-high {
+    @apply inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-semibold;
+  }
+
+  .badge-medium {
+    @apply inline-block px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold;
+  }
+
+  .badge-low {
+    @apply inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold;
+  }
+
+  .badge-resolved {
+    @apply inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold;
+  }
+
+  .badge-unresolved {
+    @apply inline-block px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-semibold;
+  }
+
+  .badge-investigating {
+    @apply inline-block px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-semibold;
+  }
+}
