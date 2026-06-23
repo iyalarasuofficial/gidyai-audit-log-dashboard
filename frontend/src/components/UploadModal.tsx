@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { uploadLogs, AuditLog } from '../api/logsApi';
+import { uploadLogs } from '../api/logsApi';
 
 interface UploadModalProps {
   isOpen: boolean;

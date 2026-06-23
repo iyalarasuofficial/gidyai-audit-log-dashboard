@@ -28,7 +28,7 @@ export const Dashboard: React.FC = () => {
       const response: FetchLogsResponse = await fetchLogs(
         page,
         pagination.limit,
-        newFilters,
+         newFilters as Record<string, unknown>,
         newSearch,
         sort,
         order
